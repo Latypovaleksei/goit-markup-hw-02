@@ -193,6 +193,11 @@ a.phone-footer {
   color: var(--white);
 }
 
+.filter-btn:focus {
+  background: var(--blue);
+  color: var(--white);
+}
+
 /* под-Блок "Projects"*/
 .projects h2 {
   font-weight: 700;
