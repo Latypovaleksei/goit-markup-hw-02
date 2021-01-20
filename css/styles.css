@@ -1,4 +1,7 @@
 :root {
+  --background-header: #ffffff;
+  --color-logo-footer: #ffffff;
+  --hero-text-color: #ffffff
   --white: #ffffff;
   --blue: #2196f3;
   --grey: #757575;
@@ -168,6 +171,7 @@ a.logo-footer {
 }
 .contacts-footer a {
   color: var(--white);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -191,6 +195,7 @@ a.phone-footer {
 .filter-btn:hover {
   background: var(--blue);
   color: var(--white);
+  cursor: pointer;
 }
 
 .filter-btn:focus {
