@@ -142,18 +142,20 @@ a.logo-footer {
   background-color: #f5f4fa;
 }
 
-.section-our-team h3 p {
+.section-our-team h3 {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section-our-team h3 {
-  font-weight: 500;
-}
 
 .section-our-team p {
   color: var(--second-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Блок "Подвал" */
