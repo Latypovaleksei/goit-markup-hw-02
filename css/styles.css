@@ -1,16 +1,16 @@
 :root {
-  --background-header: #ffffff;
-  --color-logo-footer: #ffffff;
-  --hero-text-color: #ffffff;
-  --white: #ffffff;
-  --blue: #2196f3;
-  --grey: #757575;
-  --dark-grey: #2f303a;
-  --Color-btn: #f5f4fa;
+  --main-color: #ffffff;
+  --active-color: #2196f3;
+  --second-color: #757575;
+  --background-hero-footer: #2f303a;
+  --btn-color: #f5f4fa;
 }
 
 body {
   font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
   color: #212121;
 }
 
@@ -36,53 +36,54 @@ li {
 }
 
 a.logo-footer {
-  color: var(--white);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .logo-web {
-  color: var(--blue);
+  color: var(--active-color);
 }
 
 /* Блог "Верхняя линия" */
 .header {
-  background-color: var(--white);
+  background-color: var(--main-color);
 }
 
 .navigation-item {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.navigation-item:hover {
-  color: var(--blue);
+.navigation-item a:hover {
+  color: var(--active-color);
+}
+
+.navigation-item a:focus {
+  color: var(--active-color);
 }
 
 .contacts a {
-  color: var(--grey);
+  color: var(--second-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
 .contacts a:hover {
-  color: var(--blue);
+  color: var(--active-color);
+}
+
+.contacts a:focus {
+  color: var(--active-color);
 }
 
 /* Блок "Шапка" */
 .section-hero {
-  background-color: var(--dark-grey);
+  background-color: var(--background-hero-footer);
 }
 
 .hero-title {
-  color: var(--white);
+  color: var(--main-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -92,8 +93,8 @@ a.logo-footer {
 }
 
 .hero-button {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--active-color);
+  color: var(--main-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -103,9 +104,18 @@ a.logo-footer {
   letter-spacing: 0.06em;
 }
 
+/* Titles section*/
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Блок "Особенности" */
 .section-features {
-  background-color: var(--white);
+  background-color: var(--main-color);
 }
 
 .section-features h3 {
@@ -117,62 +127,41 @@ a.logo-footer {
 }
 
 .section-features p {
-  color: var(--grey);
-  font-size: 14px;
+  color: var(--second-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 /* Блок "Чем мы занимаемся" */
 .section-what-are-we-doing {
-  background-color: var(--white);
-}
-
-.section-what-are-we-doing h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  background-color: var(--main-color);
 }
 
 /* Блок "Наша команда" */
 .section-our-team {
-  background-color: rgba(245, 244, 250, 1);
+  background-color: #f5f4fa;
 }
 
-.title-section-our-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.section-our-team h3 {
-  font-weight: 500;
+.section-our-team h3 p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.section-our-team h3 {
+  font-weight: 500;
 }
 
 .section-our-team p {
-  color: var(--grey);
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  color: var(--second-color);
 }
 
 /* Блок "Подвал" */
 .footer {
-  background-color: var(--dark-grey);
+  background-color: var(--background-hero-footer);
 }
 .contacts-footer a {
-  color: var(--white);
-  font-style: normal;
-  font-size: 14px;
+  color: var(--main-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -184,7 +173,7 @@ a.phone-footer {
 /* Блок "Портфолио" */
 /* под-Блок "filters"*/
 .filter-btn {
-  background: var(--Color-btn);
+  background: var(--btn-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -193,14 +182,14 @@ a.phone-footer {
 }
 
 .filter-btn:hover {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--active-color);
+  color: var(--main-color);
   cursor: pointer;
 }
 
 .filter-btn:focus {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--active-color);
+  color: var(--main-color);
 }
 
 /* под-Блок "Projects"*/
@@ -211,7 +200,7 @@ a.phone-footer {
   letter-spacing: 0.06em;
 }
 .projects p {
-  color: var(--grey);
+  color: var(--second-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
