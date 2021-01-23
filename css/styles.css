@@ -4,6 +4,9 @@
   --second-color: #757575;
   --background-hero-footer: #2f303a;
   --btn-color: #f5f4fa;
+  --main-text-color: #212121;
+  --section-our-team-color: #f5f4fa;
+  --contacts-foter-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -11,16 +14,16 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 a {
   text-decoration: none;
 }
 
-a:visited {
+/*a:visited {
   color: unset;
-}
+}*/
 
 li {
   list-style-type: none;
@@ -29,6 +32,7 @@ li {
 /* Logo */
 .logo {
   font-family: Raleway, sans-serif;
+  color: var(--main-text-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -46,6 +50,14 @@ a.logo-footer {
 /* Блог "Верхняя линия" */
 .header {
   background-color: var(--main-color);
+}
+
+.navigation-list a {
+  color: var(--main-text-color);
+}
+
+.active-page a {
+  color: var(--active-color);
 }
 
 .navigation-item {
@@ -102,6 +114,7 @@ a.logo-footer {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* Titles section*/
@@ -139,7 +152,7 @@ a.logo-footer {
 
 /* Блок "Наша команда" */
 .section-our-team {
-  background-color: #f5f4fa;
+  background-color: var(--section-our-team-color);
 }
 
 .section-our-team h3 {
@@ -169,7 +182,7 @@ a.logo-footer {
 }
 a.mail-footer,
 a.phone-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contacts-foter-text-color);
 }
 
 /* Блок "Портфолио" */
