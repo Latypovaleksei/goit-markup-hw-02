@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-/*a:visited {
-  color: unset;
-}*/
-
 li {
   list-style-type: none;
 }
@@ -48,16 +44,13 @@ a.logo-footer {
 }
 
 /* Блог "Верхняя линия" */
-.header {
-  background-color: var(--main-color);
+
+#active-page {
+  color: var(--active-color);
 }
 
 .navigation-list a {
   color: var(--main-text-color);
-}
-
-.active-page a {
-  color: var(--active-color);
 }
 
 .navigation-item {
@@ -107,6 +100,7 @@ a.logo-footer {
 .hero-button {
   background: var(--active-color);
   color: var(--main-color);
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -127,9 +121,6 @@ a.logo-footer {
 }
 
 /* Блок "Особенности" */
-.section-features {
-  background-color: var(--main-color);
-}
 
 .section-features h3 {
   font-weight: 700;
@@ -143,11 +134,6 @@ a.logo-footer {
   color: var(--second-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-/* Блок "Чем мы занимаемся" */
-.section-what-are-we-doing {
-  background-color: var(--main-color);
 }
 
 /* Блок "Наша команда" */
