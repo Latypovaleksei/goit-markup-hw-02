@@ -63,7 +63,6 @@ body {
 
 .nav-item a:hover,
 .nav-item a:focus {
-  cursor: pointer;
   color: var(--highlighting-color);
 }
 
@@ -82,7 +81,6 @@ body {
 
 .contact-item a:hover,
 .contact-item a:focus {
-  cursor: pointer;
   color: var(--highlighting-color);
 }
 
@@ -175,6 +173,7 @@ body {
 
 .filters-item button:hover,
 .filters-item button:focus {
+  cursor: pointer;
   background-color: var(--highlighting-color);
   color: var(--main-color);
 }
