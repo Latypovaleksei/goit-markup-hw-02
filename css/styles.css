@@ -6,6 +6,7 @@
   --main-color: rgba(255, 255, 255, 1);
   --secondary-background-color: rgba(47, 48, 58, 1);
   --third-background-color: rgba(245, 244, 250, 1);
+  --bt-hover: rgba(24, 140, 232, 1);
 }
 
 a {
@@ -112,6 +113,7 @@ body {
 
 .bt-hero:hover {
   cursor: pointer;
+  background-color: var(--bt-hover);
 }
 
 /* Особенности */
@@ -122,6 +124,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--main-text-color);
 }
 
 .feature-item p {
@@ -142,6 +145,10 @@ body {
 }
 
 /* Наша команда */
+.team-section {
+  background-color: var(--third-background-color);
+}
+
 .team-item .names {
   font-weight: 500;
   font-size: 16px;
@@ -210,6 +217,10 @@ body {
 }
 
 /* блок Адрес */
+.address-list {
+  font-style: normal;
+}
+
 .address-item a {
   font-weight: 400;
   font-size: 14px;
